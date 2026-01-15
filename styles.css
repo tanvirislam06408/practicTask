@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* colors and shared styles */
+.accent-text{
+    color: rgba(58, 58, 58, 1);
+}
+.btn{
+    padding: 10px 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(224, 44, 109, 1);
+    border: none;
+    border-radius: 45px;
+    max-width: 196px;
+}
+.gray{
+    color: rgba(108, 108, 108, 1);
+}
+body{
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 85%;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+}
+.nav-title{
+    color: rgba(58, 58, 58, 1);
+    font-size: 24px;
+    font-weight: bold;
+}
+.navLinks{
+    display: flex;
+    gap: 34px;
+}
+
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+    font-size: 16px;
+    font-weight: 600;
+}
+/* hero sec */
+.heroContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 145px;
+    align-items: center;
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    gap: 50px;
+    
+}
+.heroContainer img{
+    max-width: 100%;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.textContainer h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+.sopnsors{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 42px;
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.collection h2{
+    
+    text-align: center;
+}
+.cards{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding: 0 50px;
+    
+}
+.card{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgba(255, 255, 255, 1);
+border-radius: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .navbar, .sopnsors{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .navLinks{
+        flex-wrap: wrap;
+    }
+    .heroContainer{
+        flex-direction: column-reverse;
+        background-image: none;
+        margin-top: 34px;
+    }
+    .textContainer{
+        text-align: center;
+            gap: 34px;
+        
+    }
+    .textContainer h1{
+            font-size: 24px;
+    font-weight: 700;
+    }
+    .btn{
+       margin: 0 auto;
+    }
+    .sopnsors{
+        padding: 5px;
+        align-items: center;
+        gap: 27px  ;
+    }
+    .sopnsors img{
+        max-width: 150px;
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:927px) {
+    .navLinks{
+        flex-wrap: wrap;
+    }
+
+    
+}
